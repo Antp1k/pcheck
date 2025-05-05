@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>PCheck</title>
+    <style>
+      body {
+        width: 300px;
+	max-width: 300px;
+        font-family: Arial, sans-serif;
+        padding: 10px;
+        background-color: #1c1c1c;
+      }
+
+      div {
+	width: 250px;
+      }
+
+      p, h1, h2, h3, label {
+        color: white;
+      }
+
+      #errors {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>PCheck</h2>
+    <hr>
+    <label>List of parameters</label>
+    <textarea id="parameters"></textarea><br>
+    <label>Parameter default value</label>
+    <input type="text" id="paramValue" placeholder="Not required."><br>
+    <button id="makeUrl">Make URL</button>
+    <button id="reflections">Check params</button>
+    <div>
+    	<p id="fullUrl"></p>
+    	<p id="errors"></p>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

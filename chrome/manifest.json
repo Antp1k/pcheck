@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "PCheck",
+  "version": "1.0",
+  "description": "Checks for parameter reflections through canary strings.",
+  "permissions":[
+    "activeTab",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions":[
+    "<all_urls>"
+  ],
+  "action":{
+    "default_popup": "popup.html"
+  },
+  "content_scripts":[{"matches":["<all_urls>"],"js":["content.js"]}],
+  "web_accessible_resources":[{"resources":["content.js"],"matches":["<all_urls>"]}]
+}
